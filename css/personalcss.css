@@ -86,3 +86,17 @@
     background: linear-gradient(to bottom, #555 0%,#444 0%,#111 10%,#111 90%,#444 100%,#111 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#555', endColorstr='#111',GradientType=0 ); /* IE6-9 */	
     }
+
+
+
+
+
+    .position-custom{
+        
+        position: absolute;
+        top:120px;
+        left: 50%;
+        width: 45%;
+        height: 40%;
+        z-index: 0;
+    }
