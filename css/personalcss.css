@@ -90,13 +90,24 @@
 
 
 
-
-    .position-custom{
-        
-        position: absolute;
-        top:120px;
-        left: 50%;
-        width: 45%;
-        height: 40%;
-        z-index: 0;
+    @media only screen and (max-width: 769px) {
+        /*if smaller than a tablet should not be displayed */
+        .position-custom{
+            display: none;
+        }
     }
+    @media only screen and (min-width: 769px) {
+        .position-custom{
+        /*if bigger than a tablet should be displayed */
+            position: absolute;
+            top:25%;
+            left: 50%;
+            width: 45%;
+            height: auto;
+            z-index: 0;
+            opacity: 0.7;
+        }
+      }
+
+
+    
