@@ -37,8 +37,8 @@
           <b>Travel Blog</b>
         </a>
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Centered nav only <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
@@ -57,17 +57,72 @@
         </ul>
       </div>
       <div>
-        <i class="far fa-user mr-2 text-light "><a href="#"> Login </a><a href="#">Register</a>
+        <i class="far fa-user mr-2 text-light "><a href="#" id="login_button"> Login </a><a href="#">Register</a>
           
         </i>
       </div>
     </nav>
   </header>
-
-
   <!--END HEADER-->
 
-  <!--Carousel-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--LOGIN POPUP-->
+<div class="popup">
+  <div class="popup-content">
+    <img src="/images/close.png"  class="close" alt="close">
+    <img src="/images/user.png" class="mb-2" alt="user" width="20" height="20"><br>
+    <input type="text" class="mb-2" placeholder="Username">
+    <input type="text"  class="mb-2"placeholder="Password"><br>
+    <a href="#" class="button btn btn-orange text-white">LOGIN</a>
+  </div>
+</div>
+  <!--LOGIN POPUP-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--Carusel-->
   <div class="bg-dark p-0 position-relative">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -115,11 +170,46 @@
 
   <!--END Carousel-->
 
-  <h1 class="p-2 text-center orange-template-color special-h1-writing">Wellcome to my travel blog!</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h1 class="p-2 text-center orange-template-color special-h1-writing"><b>Wellcome to my travel blog!</b></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <!--First Card Deck-->
   <div class="card-deck m-2">
-    <div class="card text-center">
+    <div class="card text-center ">
       <img src="/img/rome_1.jpg" class="card-img-top p-1" alt="Rome">
       <div class="card-body ">
         <h5 class="card-title">Discover Rome</h5>
@@ -144,6 +234,21 @@
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <!--Second Card Deck-->
   <div class="card-deck m-2">
     <div class="card text-center">
@@ -171,6 +276,18 @@
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
  <!--Card Vertical-->
 <div class="container mt-5">
@@ -245,7 +362,7 @@
     </div>
   </div>  
 </div>
-<div class="container mt-2">
+<div class="container mt-2 mb-5">
   <div class="row">
     <div class="col">Left space for adverts etc.</div>
     <div class="col-8">
@@ -263,6 +380,7 @@
     </div>
   </div>  
 </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -277,7 +395,15 @@
 
 
 
+<script>
+  document.getElementById("login_button").addEventListener("click",function(){
+    document.querySelector(".popup").style.display="flex";
+  })
 
+  document.querySelector(".close").addEventListener("click",function(){
+    document.querySelector(".popup").style.display="none";
+  })
+</script>
 
 
 

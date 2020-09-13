@@ -10,11 +10,15 @@
 .red-template-color{
     color:#e62739;
 }
+.blue-text{
+    color:blue
+}
 
 body  {
-    background-image:url("/img/bg_1.jpg");
+    background-image:url("/img/bg_3.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
   }
 
 .card{
@@ -40,7 +44,13 @@ body  {
     background-color:#e62739;
 }
 
+.btn-orange{
+    background-color: orangered;
 
+    border: black;
+    border-radius: 15%;
+    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+}
 
 .btn:hover{
     background-color: #f80;
@@ -54,9 +64,47 @@ body  {
 }
 
 
+.popup{
+    background: rgb(0, 0, 0,0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    align-items: center;
+    text-align: center;
+    overflow:auto;
 
+}
+.popup-content{
+    width: 2auto;
+    height: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    
+}
 
+input{
+    margin: 20px auto;
+    display: block;
+    width: 50%;
+    padding: 8px;
+    border: 1px solid gray;
+}
 
+.close{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
 
 
 
@@ -108,17 +156,28 @@ body  {
             display: none;
         }
     }
-    @media only screen and (min-width: 769px) {
+    @media only screen and (min-width: 769px),screen and (max-width: 1160px) {
         .position-custom{
         /*if bigger than a tablet should be displayed */
             position: absolute;
             top:25%;
             left: 60%;
-            width: 35%;
-            height: 25%;
+            width: auto;
+            height: auto;
             z-index: 0;
             opacity: 0.8;
-
+        }
+      }
+      @media only screen and (min-width: 1441px){
+        .position-custom{
+        /*if bigger than a tablet should be displayed */
+            position: absolute;
+            top:25%;
+            left: 60%;
+            width: 25%;
+            height: 20%;
+            z-index: 0;
+            opacity: 0.8;
         }
       }
 
