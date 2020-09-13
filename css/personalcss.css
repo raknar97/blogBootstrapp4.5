@@ -1,34 +1,45 @@
-.dark-template-color{
-    color:#3b3a36;
+.blue-template-color{
+    color:#25a;
 }
-.grey-template-color{
-    color:#b3c2bf;
+.orange-template-color{
+    color:#ff8a00;
 }
-.light-blue-template-color{
-    color:#c0dfd9;
+.light-yellow-template-color{
+    color:#e6cf8b;
 }
-.light-template-color{
-    color:#e9ece5;
+.red-template-color{
+    color:#e62739;
+}
+
+
+
+
+
+.white-template-background{
+    background-color:#fff;
+}
+.orange-template-background{
+    background-color:#f80;
+}
+.black-template-background{
+    background-color:#000;
+}
+.red-template-background{
+    background-color:#e62739;
 }
 
 
 
-
-
-.dark-template-background{
-    background-color:#3b3a36;
+.btn:hover{
+    background-color: #f80;
 }
-.grey-template-background{
-    background-color:#b3c2bf;
-}
-.light-blue-template-background{
-    background-color:#c0dfd9;
-}
-.light-template-background{
-    background-color:#e9ece5;
+.site-header {
+    border-bottom: 4px solid #ff8a00;
 }
 
-
+.special-h1-writing{
+    font-family: 'Chantelli Antiqua', arial;
+}
 
 
 
