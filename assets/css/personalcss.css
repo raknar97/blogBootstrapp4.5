@@ -2,7 +2,7 @@
     color:#25a;
 }
 .orange-template-color{
-    color:#ff8a00;
+    color:#f90;
 }
 .light-yellow-template-color{
     color:#e6cf8b;
@@ -15,7 +15,7 @@
 }
 
 body  {
-    background-image:url("/img/bg_3.jpg");
+    background-image:url("/assets/img/bg_3.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -35,7 +35,7 @@ body  {
     background-color:#fff;
 }
 .orange-template-background{
-    background-color:#f80;
+    background-color:#f90;
 }
 .black-template-background{
     background-color:#000;
@@ -53,10 +53,10 @@ body  {
 }
 
 .btn:hover{
-    background-color: #f80;
+    background-color: #f90;
 }
-.site-header {
-    border-bottom: 4px solid #ff8a00;
+.orange-border {
+    border-bottom: 4px solid #f90;
 }
 
 .special-h1-writing{
